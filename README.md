@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+﻿# First React Native App 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application built with [Expo](https://expo.dev) that features a tabbed navigation interface with multiple screens.
 
-## Get started
+## Functionalities
+
+### 1. Home Screen (index.tsx)
+- **Purpose**: Main landing screen of the application
+- **Features**: 
+  - Displays a welcome message on a black background
+  - Editable placeholder text for customization
+
+### 2. Settings Screen (settings.tsx)
+- **Purpose**: GitHub repository explorer tool
+- **Features**:
+  - Text input field to enter a GitHub username
+  - "Fetch Repos" button that queries the GitHub API
+  - Displays a randomly selected public repository from the specified user
+  - Error handling for invalid usernames or users with no public repositories
+  - Clean, centered UI layout with styled input and text elements
+
+### 3. Tab Navigation (_layout.tsx)
+- **Purpose**: Navigation structure for the application
+- **Features**:
+  - Bottom tab navigation with two main tabs:
+    - **Home Tab**: Navigate to the main home screen
+    - **Settings Tab**: Access the GitHub repository explorer
+  - Icon-based navigation using Ionicons
+  - File-based routing system
+
+## Getting Started
 
 1. Install dependencies
 
-   ```bash
+   `bash
    npm install
-   ```
+   `
 
 2. Start the app
 
-   ```bash
+   `bash
    npx expo start
-   ```
+   `
 
-In the output, you'll find options to open the app in a
+3. Choose how to run the app:
+   - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+   - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+   - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+   - [Expo Go](https://expo.dev/go)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- pp/_layout.tsx - Tab navigation setup
+- pp/index.tsx - Home screen
+- pp/settings.tsx - GitHub repository explorer
+- ssets/ - Application images and assets
 
-## Get a fresh project
+## Tech Stack
 
-When you're ready, run:
+- [React Native](https://reactnative.dev/) - Mobile app framework
+- [Expo](https://expo.dev/) - React Native development platform
+- [Expo Router](https://docs.expo.dev/router/introduction/) - File-based routing
+- [GitHub API](https://docs.github.com/en/rest) - For fetching user repositories
+- TypeScript - Type safety
 
-```bash
-npm run reset-project
-```
+## Learn More
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+For more information about developing with Expo, visit:
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo documentation](https://docs.expo.dev/)
+- [Expo Router Guide](https://docs.expo.dev/router/introduction/)
+- [Expo Tutorial](https://docs.expo.dev/tutorial/introduction/)
