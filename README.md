@@ -33,13 +33,13 @@ A React Native application built with [Expo](https://expo.dev) that features a t
 1. Install dependencies
 
    `bash
-   npm install
+   bun install
    `
 
 2. Start the app
 
    `bash
-   npx expo start
+   bunx expo start
    `
 
 3. Choose how to run the app:
